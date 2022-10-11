@@ -1,0 +1,51 @@
+libpagemaker 0.0.4
+
+- Add a command line tool for conversion to plain text, called pmd2text.
+- Require C++11 for build.
+- Drop outdated MSVC project files.
+- Fix parsing of page dimensions and shape coordinates in Mac documents.
+  That makes the output at least somewhat useful, but more work is needed
+  to handle big endian files properly.
+- Fix parsing of color tint in Mac documents. (tdf#109126)
+- Fix parsing of text formatting attributes in Mac documents.
+- Properly handle all caps and small caps.
+- Parse more text formatting attributes.
+- Parse more paragraph attributes.
+
+libpagemaker 0.0.3
+
+- Make --help output of conversion tools help2man-friendly.
+- Read big endian (Mac) files (tdf#91419).
+- Other small fixes and improvements.
+
+libpagemaker-0.0.2
+
+- Use record type to identify records in the trailer, instead of expecting
+  that they are always at a specific position. This fixes reading of some
+  real-world documents.
+- Use symbol visibility on Linux. The library only exports the two public
+  functions now.
+- Fix several crashes and hangs when reading broken files, found with the help
+  of american-fuzzy-lop.
+- Fix several minor issues reported by Coverity.
+
+libpagemaker-0.0.1
+
+- Fix build on MS Windows.
+- Parse HLS colors.
+- Parse bitmaps.
+- Parse WMF metafiles.
+- Fix output of multi-page documents.
+- Fix parsing of polygons.
+- Handle rotation of various shapes correctly.
+- Fix handling of text that contains ASCII control characters.
+- Fix parsing of big data blocks, where the data are saved in indirect
+  records (sub-records).
+- And many other small fixes and improvements.
+
+libpagemaker-0.0.0
+
+- First release.
+- Implement parsing of basic shapes: rectangle, ellipse, path, text
+  block; also parse some properties.
+- Handle multi-page documents, both single- and double-sided (untested).

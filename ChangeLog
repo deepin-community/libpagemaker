@@ -1,0 +1,1744 @@
+2018-01-08  David Tardon  <dtardon@redhat.com>  [4f6842e4357a4024a046726b9be1fc0d8f9775e9]
+
+	fix operator priorities
+
+	Change-Id: I1e8d0ff0a2f6882175ea358f10d8d708a2914f89
+
+2018-01-08  David Tardon  <dtardon@redhat.com>  [91708fd5ee5da55a12e278c9205578deebe47025]
+
+	update NEWS
+
+	Change-Id: If5954a48da26fea6cb1116500b836d5f76de0b6a
+
+2018-01-08  David Tardon  <dtardon@redhat.com>  [c4c0ce81d6974c23191f9fbb0808ee1f684888dd]
+
+	warn on unexpected stroke type
+
+	Change-Id: I6a219a52234ae16f85c9df98b5e8ce2be8f6d1ca
+
+2018-01-08  David Tardon  <dtardon@redhat.com>  [2e4074e6bb93ea084cb4b76ef3a449bbfc6d6134]
+
+	parse para rules
+
+	Change-Id: Id85adea644a5023bffed54e325d0cb05ad146cfe
+
+2018-01-08  David Tardon  <dtardon@redhat.com>  [e06e8985bdb3b98e79d58b4ff96172ecb72f4238]
+
+	parse keep and hyphenation para props
+
+	Change-Id: I8bf88fd5669a0f8ea7e4148ab7bf9d8e3571f6f1
+
+2018-01-07  David Tardon  <dtardon@redhat.com>  [0f8ccf029b95442f721942d896a194f10874c509]
+
+	organize headers
+
+	Change-Id: I5654772096f05038133195b835d5f7b131846402
+
+2018-01-07  David Tardon  <dtardon@redhat.com>  [50f19c24791763b539429b31dd6d740111fb97e3]
+
+	prepare for a release
+
+	Change-Id: I84bc709d1c78eab8083cc230bf777d1cbd99f24d
+
+2018-01-07  David Tardon  <dtardon@redhat.com>  [b5c5cb92bc980e7cbc8ea6f84bc5f6780ab8144e]
+
+	fix output for all caps
+
+	Change-Id: I3c1b0969e16ce5fc723abf497fd899c7ccf15898
+
+2018-01-07  David Tardon  <dtardon@redhat.com>  [7b702744833bd095a8dd668a3eb35d4dd3f15afb]
+
+	fix parsing of coords in Mac docs
+
+	Change-Id: Ic452d5e4ee45ac68f3d5c17d6c30f2e62516c235
+
+2018-01-07  David Tardon  <dtardon@redhat.com>  [965ba301604123d814f4eef9067afeef4a20f92a]
+
+	fix parsing of page dims in Mac docs
+
+	And it seems it improves also parsing of Win files. At least
+	letter-sized docs are now really 11x8.5in instead of 11x8.4917in.
+
+	Change-Id: I092ec023424687e1312575275a3392bbd9ddf0da
+
+2018-01-05  Miklos Vajna  <vmiklos@collabora.co.uk>  [d9c7fd8685c6330712b65988616b0fa590b9fe0a]
+
+	m4: MSVC defines __cplusplus as 199711L still
+
+	See e.g.
+	<https://stackoverflow.com/questions/37503029/cplusplus-is-equal-to-199711-in-msvc-does-it-support-c11>,
+	on MSVC we can't depend on the value of __cplusplus, since that one is a
+	too low value, even if everything else works fine.
+
+2018-01-04  David Tardon  <dtardon@redhat.com>  [a5db0b38202f3fe4d93da7df532cfcce0116b420]
+
+	parse all char formatting flags
+
+	Change-Id: I0d3b64dc46a3b3cb23124fbf3596992bfa97700a
+
+2018-01-04  David Tardon  <dtardon@redhat.com>  [3384dfa27271baa738a91dac816edc9dcb05f774]
+
+	fix parsing of formatting flags
+
+	Change-Id: Ide49c52769e27234513248c81bad15e66f65fc7b
+
+2018-01-01  David Tardon  <dtardon@redhat.com>  [5e7eb51ccae34747a03a85e7097a0760b1e691f3]
+
+	simplify
+
+	Change-Id: I9e260d27b948f91a2d6c0dac5cd308d5fe78025b
+
+2018-01-01  David Tardon  <dtardon@redhat.com>  [42f5ac5e92abba0fcd1faa00546124fb9627fa58]
+
+	handle all-caps properly
+
+	Change-Id: Ife3c635154ef1c1bd8c8272ac89b615e3b2e5e88
+
+2018-01-01  David Tardon  <dtardon@redhat.com>  [895458ace72bc54ebb6f1c0b154f4c325fd20a73]
+
+	drop this nonsense
+
+	Change-Id: Id3805c9105484d6f22e1734d71c83ff9d6d20c01
+
+2018-01-01  David Tardon  <dtardon@redhat.com>  [13b83f5957136a12c7927671cf3e3c4b828784ac]
+
+	handle formatting flags in a sane way
+
+	Change-Id: I504398e6b9f7cbc9da97453f0977f97b5445e00a
+
+2018-01-01  David Tardon  <dtardon@redhat.com>  [5a3466336aef8db409a45cc93bd612b0922086e4]
+
+	drop struct ctors with many args of same type
+
+	They don't really simplify the usage of the structs and their use can
+	easily lead to errors.
+
+	Change-Id: Id3ddf986cdcfeab59680bf0d545e961f42690cd5
+
+2018-01-01  David Tardon  <dtardon@redhat.com>  [fbb44cc9fd1b7c7e28479f41ea1c09ba90437ce7]
+
+	tdf#109126 fix parsing color tint in BE files
+
+	Change-Id: I8f4dee61ceb91e423b974a85aabd88f90d6f089f
+
+2017-11-13  Miklos Vajna  <vmiklos@collabora.co.uk>  [9f9eb81807f36d6869224fb8f5e3849fedffd421]
+
+	Use auto when declaring iterators and when initializing with a cast
+
+	Change-Id: I84711d7fb84bdfb0eba75304831e83ae2b1c3fde
+
+2017-10-31  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [51c7a58e4e8f1ac6900f1b93ab7bfa2af0c0ef82]
+
+	doxygen -u
+
+	Change-Id: Ic222ff5c87ca4fc38cedcdb1d5010458e420a325
+
+2017-10-28  David Tardon  <dtardon@redhat.com>  [a33e08f698894174597dc24d001b8f97461641cb]
+
+	drop outdated MSVC project files
+
+	Change-Id: Ieac7e0a1615f3f29f87d3f06c6d01c671022736b
+
+2017-09-28  David Tardon  <dtardon@redhat.com>  [28712bde8efe41d436ceac2809a88ddbce748097]
+
+	avoid output from fuzzer
+
+	Change-Id: I56b916bc1643af7eed160148b40b76843386350e
+
+2017-09-04  Miklos Vajna  <vmiklos@collabora.co.uk>  [76ff7422d4da8ae53691b78ac783f5294a9d19e5]
+
+	Convert explicit for loops to range-based ones where possible
+
+	Change-Id: I3d011933d8dc02af9b0d31002566e6b3914c325b
+
+2017-09-03  Miklos Vajna  <vmiklos@collabora.co.uk>  [6e8d7b6405033e1e53e7b341f1fccb1913bec9a7]
+
+	Convert 0 to nullptr where it's used as a pointer value
+
+	To make the code easier to read, because this means the remaining zeros
+	all mean numbers.
+
+	Change-Id: I3ffdacf0b9e127e963e8d7b3e60feca88ee6421f
+
+2017-09-02  Miklos Vajna  <vmiklos@collabora.co.uk>  [bd38bbdc53baa6f3b00b5d60f07d053abe9bc344]
+
+	Mark overriding member functions as 'override'
+
+	This does not affect the generated code (API or ABI), but:
+
+	1) Makes sure that in case the signature of one of these functions would
+	change by accident, the build breaks as the function no longer overrides
+	a base function.
+
+	2) Makes the code readable by explicitly marking all overriding
+	functions as 'override', where previously the reader had to read the
+	interface of the base class(es) as well to find out if the function is
+	virtual or not.
+
+	3) Since 'override' implies 'virtual', remove the 'virtual' keyword
+	where 'override' is present.
+
+	Change-Id: I04ce37eb53b8466be5257ab16d89a807ac00a14f
+
+2017-04-15  David Tardon  <dtardon@redhat.com>  [0d84100b10bbed4ac48c6d356e3a82642ce3c5c7]
+
+	drop verbose debug
+
+	Change-Id: I987125ebdcbba106154bce5ef5661a12d2df5a31
+
+2017-04-15  David Tardon  <dtardon@redhat.com>  [832385cff703f7a10a6c30575b0c17fa385aa0ae]
+
+	move check for __attribute__((format)) to configure
+
+	Change-Id: I72f11f7d51d89f62772e1f29a077c1c628cfc743
+
+2017-04-15  David Tardon  <dtardon@redhat.com>  [48cd677816e1c20bf93f8b63ffeae6e8ced7c087]
+
+	replace manual def. of int types by boost
+
+	Change-Id: I5df5e870e8fe9eda7cbcfe9fc0240d21d4906103
+
+2017-04-15  David Tardon  <dtardon@redhat.com>  [9cc00a452b2b66e8d9562757599616294604213e]
+
+	boost::scoped_ptr -> std::unique_ptr
+
+	Change-Id: Ifea9b9b368a8186ddcacc1b6477e90ecdddeb664
+
+2017-04-15  David Tardon  <dtardon@redhat.com>  [dea7545a6dae4792b32b51abaec45c9a47858b1a]
+
+	boost::shared_ptr -> std::shared_ptr
+
+	Change-Id: Ic1afba434a49e303fe706ebb3cd9535e5151507e
+
+2017-04-15  David Tardon  <dtardon@redhat.com>  [58f19accdacab35ae27409e46b557024982ac5ac]
+
+	switch to C++11
+
+	Change-Id: I049fc4bf37667192b0ae997ad150cde3632d8df3
+
+2017-04-15  David Tardon  <dtardon@redhat.com>  [9300dfb037152400a60803b71f52c5f57afafd3b]
+
+	only ignore generated files in m4
+
+	Change-Id: Ibb9e5bf67157a0a5cb3989ed4e0e36027f702fb0
+
+2017-03-30  David Tardon  <dtardon@redhat.com>  [8e440c31f449de2330409541dc136c5f8fe1f126]
+
+	create a fuzzing driver for oss-fuzz
+
+	Change-Id: I8f5479000f56fc7dd34a4741530de2e62a7a36a6
+
+2017-03-16  dennisroczek  <dennisroczek@libreoffice.org>  [75f0cc6828790e043d912d90c46646ce60ff0460]
+
+	fix typo: "the the" --> the
+
+	Change-Id: I57d5a33991bc74fc056df2ecac95e0f9764bdef2
+	Reviewed-on: https://gerrit.libreoffice.org/35172
+	Reviewed-by: Julien Nabet <serval2412@yahoo.fr>
+	Tested-by: Julien Nabet <serval2412@yahoo.fr>
+
+2017-03-09  dennisroczek  <dennisroczek@libreoffice.org>  [43eb4c889b2758432369943568042a4e185db8da]
+
+	fix typo: usefull --> useful
+
+	Change-Id: I742435d6428283d6f96181cd35f5c816e8af4c46
+	Reviewed-on: https://gerrit.libreoffice.org/34996
+	Reviewed-by: Julien Nabet <serval2412@yahoo.fr>
+	Tested-by: Julien Nabet <serval2412@yahoo.fr>
+
+2016-03-27  David Tardon  <dtardon@redhat.com>  [64e2f767f870e636c065806beaab095ca55f3bac]
+
+	use boost::iterator_facade
+
+	Change-Id: I26953ce3cde372fe3ae8f30101cc9ce0f914968b
+
+2016-03-03  David Tardon  <dtardon@redhat.com>  [abe66df2508ac973d47f4cfd8fb772cc4a0a6647]
+
+	add converter to plain text
+
+	Change-Id: I372df56efcac68d2b0cdc640a2a5c5f055984cd7
+
+2016-03-03  David Tardon  <dtardon@redhat.com>  [d98c92ac4d6231cf21a4e6c25ba65af885eb1b2d]
+
+	bump version
+
+	Change-Id: Ide1b8276ef44f5cde5296352fffa3ed7c042a401
+
+2016-03-02  David Tardon  <dtardon@redhat.com>  [d1c2c38c4c587494eb08707c70aca877e63d5daf]
+
+	prepare for a release
+
+	Change-Id: I28f82678e893918d357f755c8d26c62570b9302f
+
+2016-03-02  David Tardon  <dtardon@redhat.com>  [f569ed35ddce1efc5443e6ddb00c3be58baa7a94]
+
+	fill README
+
+	Change-Id: Ic066be70f4443a3d1c7067672719d4a296da9870
+
+2016-03-02  David Tardon  <dtardon@redhat.com>  [18c47acc45b55a91225d26aa3dbd44a3be790851]
+
+	update HACKING
+
+	Change-Id: I905451a88ab0dfcf2d6a214b350fbdaf3796b607
+
+2016-03-02  David Tardon  <dtardon@redhat.com>  [32d58e343ea67edf8e3e45e9e442e20b31a5fbd1]
+
+	simplify iteration of record containers
+
+	Change-Id: I988743e8e57fa36275e56b6d72d7d070f4feb711
+
+2016-02-29  David Tardon  <dtardon@redhat.com>  [1948b03c02dca29d996d14777311e7935d7345d0]
+
+	tdf#91419 refactor ToC reading to fix big endian
+
+	Change-Id: I2327991d28d8aa7786652f774685c9cf88c5614e
+
+2016-02-29  David Tardon  <dtardon@redhat.com>  [d9bf3529d8e1221629ed3648764594502854f599]
+
+	tdf#91419 record type is a single byte
+
+	Change-Id: Ic16b54568c7754192cb08d013cb80c554b016082
+
+2016-02-29  David Tardon  <dtardon@redhat.com>  [09dbc14e6876582772ae2a82150bef126d77aa09]
+
+	tdf#91419 ToC length is 2 bytes
+
+	Change-Id: I30f5e3a076a98d8386e8468d8e4d0ac05ab9b08c
+
+2016-02-26  David Tardon  <dtardon@redhat.com>  [81b89abb258fd8b01d8e441dae7ad9591796539f]
+
+	read the right endian
+
+	Change-Id: Ib08f45e00ede57623810c1492b9bc1e7102f6fef
+
+2016-02-26  David Tardon  <dtardon@redhat.com>  [ee20e7f49e88f7a8cce7ebbe4474bb0270db06f1]
+
+	print debug messages to stderr
+
+	Change-Id: I0553e520b9bebff0b114e733553530fc7275ec75
+
+2015-12-27  David Tardon  <dtardon@redhat.com>  [b5f3e2354bd60a5ddc8e16686282be842dddef72]
+
+	update AUTHORS to reflect reality
+
+	Change-Id: I0114d28c3bea8313e769d31e04e326e727e3f2d6
+
+2015-12-27  David Tardon  <dtardon@redhat.com>  [c90b4694c9c5db0acb32a0d860018d103254ca66]
+
+	there is no BUILD_EXTRA_DIST
+
+	Change-Id: I9fc2f9cce96f891070ecc5dd85112e8b4b3a3c97
+
+2015-12-27  David Tardon  <dtardon@redhat.com>  [abf44caf7440839f5ae97c5b8e285b4c80e70255]
+
+	simplify dist. and inst. of headers
+
+	Change-Id: Iff80a5abf550ff2b52ba45de52ff5b9619773c53
+
+2015-12-27  David Tardon  <dtardon@redhat.com>  [7b5bfd98996504c55c2b98620747343f0a2012af]
+
+	make --help output more help2man-friendly
+
+	Change-Id: Ifac6d40e7ecfdfeccb309d66f75eb705c0fd7e43
+
+2015-06-16  David Tardon  <dtardon@redhat.com>  [c5842361b437c7cf366568f9b7ca3c0684b4763e]
+
+	check optional value before use
+
+	Change-Id: I73cf36c209689f0c7f39277f67ae841f0cf2c148
+
+2015-06-16  David Tardon  <dtardon@redhat.com>  [d124ebd8ea8ab6bd84f93d573beb76c61d4e06f6]
+
+	only print messages in debug mode
+
+	Change-Id: I74e372a3e3281fd8e7669749e762fea088f384fd
+
+2015-06-16  David Tardon  <dtardon@redhat.com>  [7cb05e0704677fe47ff3a4c793b246b021b6440e]
+
+	add make astyle target
+
+	Change-Id: I12f31d9b646b4526b1fa42cd551e88723fc13715
+
+2015-06-16  David Tardon  <dtardon@redhat.com>  [d26226d2b4eea36a81b91e1561a42aeddb38df8c]
+
+	simplify this
+
+	Change-Id: I1fd163738d90f8ab34970dd7477e6411988b266a
+
+2015-02-02  David Tardon  <dtardon@redhat.com>  [7d81fafdfcebb73235aac5429e18872a4cd053e1]
+
+	remove bashism
+
+	Change-Id: Ia4784a6d08f5d952dc4d2f1288d3898ef037646f
+
+2014-11-28  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [585b795c1431fd42d29391d1932bb6745edc2eb1]
+
+	Oops
+
+	Change-Id: I60d2bbfeedd0f4ae263b42232870fa3b369d2f4b
+
+2014-11-27  David Tardon  <dtardon@redhat.com>  [f9227c057ff107ba6edee1e82310f2b164bf7331]
+
+	prepare for a release
+
+	Change-Id: I1d660ee7debadda97d28181a18c187b08e0441f8
+
+2014-11-25  Caolán McNamara  <caolanm@redhat.com>  [797cf4b672c6eaf9556347b8cd1b1918fa3f882c]
+
+	coverity#12661 Untrusted value as argument
+
+	this reduces the number of libpagemaker coverity warnings to 0
+
+	Change-Id: I336c12adb05d5f7bea90562170db46dd6dafff1f
+
+2014-11-25  Caolán McNamara  <caolanm@redhat.com>  [74998281699c0f7333927b2e4df7b05b2c7889c4]
+
+	coverity#12661 Untrusted value as argument
+
+	cut user-controlled loop value to max physically possible
+	in remaining size of file
+
+	Change-Id: I9e25185b66fab26c7c24fd5197122e78002a66c7
+
+2014-11-25  David Tardon  <dtardon@redhat.com>  [ebb6f57a601858c76b3b3dff694e9fbd5026c88c]
+
+	let getLength return the whole stream length
+
+	... as the name implies. I copied the whole source file from another
+	project where I only needed the length remaining to the end. And for
+	some reason getLength() seemed a good name for this...
+
+	Change-Id: I23abf2bd8fe0d56a7af3a366f2f9c76bc36fb475
+
+2014-11-25  David Tardon  <dtardon@redhat.com>  [0a205316441ff60ebc0a3feeb8110737747bb3c4]
+
+	the stream can be at the end for seeking
+
+	Change-Id: I653670bfcd6903b570d16941ba27bfe2cb974d2f
+
+2014-11-25  David Tardon  <dtardon@redhat.com>  [1f00e37e56a13f9a7f574af3dd59c084869a4d8b]
+
+	avoid infinite recursion when reading TOC of a broken file
+
+	Change-Id: I5c7f29d5d1366f3b8ef8cb3eabcdbe8a78464ff7
+
+2014-11-25  David Tardon  <dtardon@redhat.com>  [bf74c3e939ba38f0a2abd73981eccc6c5abc260c]
+
+	do not try to read more chars than there is
+
+	Change-Id: Ia9e6cceb004dc816a4632140f42db002d92695f1
+
+2014-11-25  David Tardon  <dtardon@redhat.com>  [2f9892b0b0b51d884c8db98b4297e5d05d5ad84d]
+
+	don't drop empty last page if it's the only page
+
+	Change-Id: I0114e012f528b4b2e02d89d64cb81ebfae9f92c7
+
+2014-11-24  David Tardon  <dtardon@redhat.com>  [6838844085aa6b26e3e1250200da45096e1e39dc]
+
+	only export public symbols
+
+
+2014-09-05  anuragkanungo  <anuragkanungo@gmail.com>  [abd3f309df8a566dd181ac44ec85d8d7beeab7b6]
+
+	Trailer SubRecord Parsing
+
+	Change-Id: I2d015ce0758de2483d5e5a589553958e2c0edfd3
+	Reviewed-on: https://gerrit.libreoffice.org/11131
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+	Tested-by: David Tardon <dtardon@redhat.com>
+
+2014-08-25  anuragkanungo  <anuragkanungo@gmail.com>  [2907582ec0f6e86839b2598c29e6ed78a51599d3]
+
+	Text Block Parsed Using getRecordByRecType instead of SeqNum
+
+	Change-Id: Ia8d401ce01dd7f820f9d15ebdd8ca483d71f37f7
+	Reviewed-on: https://gerrit.libreoffice.org/11109
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+	Tested-by: David Tardon <dtardon@redhat.com>
+
+2014-08-20  David Tardon  <dtardon@redhat.com>  [e4298daf7159d7f678b8960537f8aa47f9dce18d]
+
+	prepare for a new release
+
+	Change-Id: I7df753800e327ba1b733e097d508e6e5f408273f
+
+2014-08-14  anuragkanungo  <anuragkanungo@gmail.com>  [e55b1a943f7fb30815bac089656be68723acbff3]
+
+	XForm Encapsulation
+
+	Change-Id: Iaae812163bed9a512056640f67f5a0a29342e231
+	Reviewed-on: https://gerrit.libreoffice.org/10919
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+	Tested-by: David Tardon <dtardon@redhat.com>
+
+2014-08-13  anuragkanungo  <anuragkanungo@gmail.com>  [1efba9f1d33bb0d09792f5fe7cfe4d537d2f2654]
+
+	Sub Record Parsing Implementation
+
+	Change-Id: I86dc21ce71b73a4b4ca4439d647eea307d7ff83e
+	Reviewed-on: https://gerrit.libreoffice.org/10886
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+	Tested-by: David Tardon <dtardon@redhat.com>
+
+2014-08-12  David Tardon  <dtardon@redhat.com>  [691fe59067d197ff69b5fdb3a5a061d63dce8867]
+
+	improve comment
+
+	Change-Id: I9dcac8962a6b2bd1a845c5cacaa572d0eb3d31c7
+
+2014-08-12  David Tardon  <dtardon@redhat.com>  [3c98303cfb2f430b841019ed5596a0b6f778bfff]
+
+	drop unneeded comments
+
+	Change-Id: Iee933009d7c29efc6bb38b152d90dbbd257a7289
+
+2014-08-12  David Tardon  <dtardon@redhat.com>  [02a8447e0c56c9ccd15139b3dea3cfb70cf9b3e7]
+
+	simplify
+
+	Change-Id: Ic39b9cc4578c768c4de2d8b6efdfe57ed4a5fd89
+
+2014-08-12  anuragkanungo  <anuragkanungo@gmail.com>  [e074e60ab3b6ce799c10d1d97ab2c040cebf71b2]
+
+	Control Characters Error Prevention
+
+	Change-Id: I5f951b9ca1d4f045d5aea9e4211e30e8940de00b
+
+2014-08-10  anuragkanungo  <anuragkanungo@gmail.com>  [ff67d3f948edb2f2a0b6f21eaa768011aacbcca7]
+
+	TOC Offset is 32 bits long instead of 16
+
+	Change-Id: I9613f8554d206e86a3caf97f9a73dc92c01a86fa
+	Reviewed-on: https://gerrit.libreoffice.org/10851
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+	Tested-by: David Tardon <dtardon@redhat.com>
+
+2014-08-03  David Tardon  <dtardon@redhat.com>  [7083b1dc06d6728941cd5a9271fc729fbc886eec]
+
+	optimize output of text
+
+	Change-Id: I88d2d615dc52353a081562a396208a78c35a77bf
+
+2014-08-03  anuragkanungo  <anuragkanungo@gmail.com>  [8621a1e2c09167d9db4e396cce33152a563f5d41]
+
+	Char and Para Properties moved to PMDTypes from geometry
+
+	Change-Id: I2ce47d6338b8539f10b2c21a4d0c55adb966b035
+
+2014-08-03  anuragkanungo  <anuragkanungo@gmail.com>  [e5ced5ed3b1142f4ae86f3be72155bb9bc83991f]
+
+	Escape Character not required fixed
+
+	Change-Id: Id6214047a960b51b17c5d4bd71f21d80f951d303
+
+2014-07-29  David Tardon  <dtardon@redhat.com>  [7f8bbb5ad9e7b8c9f36ff8076d6b1851a87a491c]
+
+	check arguments
+
+	Change-Id: Id63f843b130a696bb9028a367ce6915bd774c77c
+
+2014-07-26  anuragkanungo  <anuragkanungo@gmail.com>  [0bdd7b07efce2c02ae645f0f7972ae7e749f41f5]
+
+	Added Text Opacity Manually
+
+	Change-Id: I70b7d95f15fb01d6e9567bb0320a9fcb571801ca
+
+2014-07-26  anuragkanungo  <anuragkanungo@gmail.com>  [fbe61feb76515e3b0d6e5da4dcef003bcd5c070c]
+
+	Shift Out Shift In Characters Issue Fixed
+
+	Change-Id: Ie34122a8f94044ea0f3560e36f50e8df5e5fa969
+
+2014-07-18  anuragkanungo  <anuragkanungo@gmail.com>  [22babfcf5b6e711306599c4321cb931eaf6f1915]
+
+	Remove Unwanted Code, Not Required With Bbox Implementation
+
+	Change-Id: I93d0f09163b684da8777e1e00d9a249d98bc0a85
+
+2014-07-18  anuragkanungo  <anuragkanungo@gmail.com>  [f1ca6cc2828bb5f7bf9ae73ed5e0ebae6ad479dd]
+
+	Bounding Box Implemented and Differentiated
+
+	Change-Id: I015a6d3a716c4ef0fdd7d9b6b65e8f1b31d514ea
+
+2014-07-18  anuragkanungo  <anuragkanungo@gmail.com>  [90937754ee3b5921ca08d9d5e2a5912d753fc37d]
+
+	TextBox Rotation Fixed
+
+	Change-Id: Id098815c4e5afc56f190a34a88255773de1241e7
+
+2014-07-18  anuragkanungo  <anuragkanungo@gmail.com>  [dbdf87b9130529772c5fd16850f32c4b38712ff2]
+
+	Stroke Width Parsing Length Issue Fixed
+
+	Change-Id: Idfe49c9dce7d6184f423a340c61b43622208b55d
+	Reviewed-on: https://gerrit.libreoffice.org/10380
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+	Tested-by: David Tardon <dtardon@redhat.com>
+
+2014-07-14  anuragkanungo  <anuragkanungo@gmail.com>  [a09785a8a6a7ea525b969712b77d6463287667a6]
+
+	Stroke Width and Opacity Bug Fixed
+
+	Change-Id: I8bce449db76257f60ba3c7361b0f9ee15caca38c
+	Reviewed-on: https://gerrit.libreoffice.org/10267
+	Reviewed-by: Fridrich Strba <fridrich@documentfoundation.org>
+	Tested-by: Fridrich Strba <fridrich@documentfoundation.org>
+
+2014-07-13  anuragkanungo  <anuragkanungo@gmail.com>  [66cfdc81b3dae110c1c52de03540a6f7c375ba60]
+
+	Stroke Properties Encapsulated
+
+	Change-Id: I0f9549d5795a9a7192e6a3e922f5dde8470436fe
+
+2014-07-13  anuragkanungo  <anuragkanungo@gmail.com>  [f1f54081a836f0927b73044085a6ca736cbdfc6f]
+
+	Fill Properties Encapsulated
+
+	Change-Id: Ie29d79d2ae15b645fed1ca0ac525ddbbac8d4bdc
+
+2014-07-12  anuragkanungo  <anuragkanungo@gmail.com>  [365a09af77133943fcb35420f982e68e756b274c]
+
+	Polygon Parsing Bug Fix
+
+	Change-Id: I1c690becd8aba79734cb9f669020a458de02216a
+	Reviewed-on: https://gerrit.libreoffice.org/10258
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+	Tested-by: David Tardon <dtardon@redhat.com>
+
+2014-07-10  anuragkanungo  <anuragkanungo@gmail.com>  [d076702f460e4a350d50a86ef099d2164296b778]
+
+	Double Sided Pages Bug Fixed
+
+	Change-Id: I107accb95f8a85fb0a671c0a32929fefa832918f
+
+2014-07-10  anuragkanungo  <anuragkanungo@gmail.com>  [349fb98919bd80a658037ed214b36a757cdef587]
+
+	Bbox topLeft , botRight propely differntiated
+
+	Change-Id: I2ad04852a6d6cb88dd106418466801edfce35a8b
+
+2014-07-10  anuragkanungo  <anuragkanungo@gmail.com>  [e51bb4fa57682bbb09ff61c4ca958c956d48f90c]
+
+	Added Shape Width and Height and Replaced use of Length/Breadth
+
+	Change-Id: I40d8169c76dc9dd702997a983c271e88e2d52b93
+
+2014-07-10  anuragkanungo  <anuragkanungo@gmail.com>  [d628359f1970071f88a487e3d3b0145fd3094577]
+
+	Sub Record Bug Fixing
+
+	Change-Id: Idaf19663863800d86494502b583f126665f8e59e
+	Reviewed-on: https://gerrit.libreoffice.org/10181
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+	Tested-by: David Tardon <dtardon@redhat.com>
+
+2014-07-06  anuragkanungo  <anuragkanungo@gmail.com>  [9318c71d3098dc65b3023997b839470e16ae32b4]
+
+	Single Sided Pages Bug Fixing ( Page Width and Memory Issue)
+
+	Change-Id: Ieb3bdea7fbc30832fd5656b956a46530e5d8f4a7
+	Reviewed-on: https://gerrit.libreoffice.org/10098
+	Reviewed-by: Fridrich Strba <fridrich@documentfoundation.org>
+	Tested-by: Fridrich Strba <fridrich@documentfoundation.org>
+
+2014-07-02  anuragkanungo  <anuragkanungo@gmail.com>  [b6909887914e8242b6abbbcb392210d947c6c8cb]
+
+	Sub Record Implementation
+
+	Change-Id: I9bac79bfffc3347b17fa17ce48c7a0c4ae70b986
+	Reviewed-on: https://gerrit.libreoffice.org/10006
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+	Tested-by: David Tardon <dtardon@redhat.com>
+
+2014-06-28  David Tardon  <dtardon@redhat.com>  [3d0f0de2bc367c24de38ed61f93838afbbbee706]
+
+	sort the record defs by value
+
+	Change-Id: I8fb2a655f46088e0304ab84f3c86e32bd32b56e1
+
+2014-06-28  David Tardon  <dtardon@redhat.com>  [4531117accdba056d7f168bd859de3eed4130f91]
+
+	limit scope of vars to what is necessary
+
+	Change-Id: I83c1316f53dfa95a992ea62bd7c775f4ca09ea2a
+
+2014-06-28  anuragkanungo  <anuragkanungo@gmail.com>  [7662a6193b5141a7a515c425bb4a07c9139e30bf]
+
+	Metafile/WMF Implementation
+
+	Change-Id: Ia43ed4f32abc4c608d495dc3ae7bd74fe09627fb
+
+2014-06-28  anuragkanungo  <anuragkanungo@gmail.com>  [d4d5da94d8b917eeb0ecb2cf1a59e0455a02706a]
+
+	Color Bug Fixing and HLS implementation
+
+	Change-Id: Ic6ba19b0b5c58f44522cbbb87136be7d14b89125
+
+2014-06-28  anuragkanungo  <anuragkanungo@gmail.com>  [401a1198d0d9faf903c41fd9f8b87fe92edd0474]
+
+	Bitmap Rotation Fixed
+
+	Change-Id: Ic7623d87cf5aa25aa53563783bcb09992fbb1160
+
+2014-06-27  anuragkanungo  <anuragkanungo@gmail.com>  [8db5239dffc88ad5e765b4c2f3d308d15e24b5ea]
+
+	Bitmap Output
+
+	Change-Id: Ic0f03e524c82dafba5c18aa18aa9e4cbfce7c057
+
+2014-06-27  anuragkanungo  <anuragkanungo@gmail.com>  [6d6cf9c1a86e747e63eb4ea3829c6cf403beed6b]
+
+	bitmap implementation
+
+	Change-Id: I567785684aab3606e40dcec9fc3749c3e132d521
+	Reviewed-on: https://gerrit.libreoffice.org/9941
+	Tested-by: David Tardon <dtardon@redhat.com>
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+
+2014-06-27  David Tardon  <dtardon@redhat.com>  [e5700eff3f09a6c0b78663b397c141f677c5b16b]
+
+	round is not available on windows
+
+
+2014-06-27  David Tardon  <dtardon@redhat.com>  [7c9cc06fecd69e88428ee5b0cf5a3a3cf40db44b]
+
+	add missing typedef on windows
+
+
+2014-06-27  David Tardon  <dtardon@redhat.com>  [ae6e41e1026a2a84641bb42aa7fb89a9a30a9114]
+
+	define M_PI if not available
+
+
+2014-06-26  David Tardon  <dtardon@redhat.com>  [308f743fe75f80c6654a11f2bc5f14712ae6a4d3]
+
+	prepare for a first release
+
+
+2014-06-24  David Tardon  <dtardon@redhat.com>  [a2f391b602948eaecf8d7abc38d354c9aa9f89e6]
+
+	avoid copying of potentially large vectors
+
+	Change-Id: I86b080f9064b68ea2accc8c459fc273815a547ac
+
+2014-06-24  David Tardon  <dtardon@redhat.com>  [059aa52781d776eea7ba023c331b657a2c9d2557]
+
+	there always must be a consecutive range of pages
+
+	... so std::map only complicates matters.
+
+	Change-Id: Iedc2279efacedf29ccf29f22bc85b325cbd26673
+
+2014-06-24  David Tardon  <dtardon@redhat.com>  [504745a8ab0ddebc070ed7f4f0f7b082c727e258]
+
+	more probable intent for double-sided page output
+
+	Change-Id: I11e0c9d216dda7c16be4407b70d75032893a800c
+
+2014-06-24  David Tardon  <dtardon@redhat.com>  [6d38a5e6d9a06271c3d8edf7a4396e1d452cba59]
+
+	fix output for double-sided documents
+
+	Change-Id: I415f06f0f52c6630d2c52911a8b8d493acbc1327
+
+2014-06-23  David Tardon  <dtardon@redhat.com>  [3f11fc8685cd69a8ab57e2c2755b3d4a9e2f140f]
+
+	OutputShape is not a base class
+
+	Change-Id: Ie61253b87e337232072f4395aad15282a11f6d51
+
+2014-06-23  David Tardon  <dtardon@redhat.com>  [03e1fc1c81dd7850f83afdbe8a9baf90188fad61]
+
+	pmd2yaml is gone, remove the tests that used it too
+
+	Change-Id: I64f3ee08ba80adeaaac462c11d8969c3a27e44f7
+
+2014-06-23  David Tardon  <dtardon@redhat.com>  [b24697c0c210f151c87333a8365cc383941c5a16]
+
+	fix reading shape transformations
+
+	Change-Id: Id20e8d2a21b92d055f87ffb8d7345c8901c987db
+
+2014-06-23  David Tardon  <dtardon@redhat.com>  [4b8ae2bb2f9e2c3ca3c4925986cb151e015d70f9]
+
+	avoid suprises
+
+	Change-Id: I91de894e97a56c3cd415a2b9d8aacb2e211d0d8c
+
+2014-06-23  anuragkanungo  <anuragkanungo@gmail.com>  [4ede4e28e19b69ba06d19e4c06b6e21e3efa93b6]
+
+	Document Is Supported ?
+
+	Change-Id: I2f0f6476b752968620fe5279fcc5cfe5bcd34fcc
+	Reviewed-on: https://gerrit.libreoffice.org/9859
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+	Tested-by: David Tardon <dtardon@redhat.com>
+
+2014-06-21  David Tardon  <dtardon@redhat.com>  [460bdd71900ca9650b4b6d5b7337e39b7f448b28]
+
+	fix parsing of polygon
+
+	Change-Id: I791147a08ebc0e066d8eea776c7503ef7c540069
+
+2014-06-21  David Tardon  <dtardon@redhat.com>  [cc165fc19b9a4a1e6b4e382e7b47a15fd8d11078]
+
+	fix parsing of ellipse
+
+	Change-Id: Id1f5b42c372950ea2deca99c8de96a074770e2db
+
+2014-06-21  David Tardon  <dtardon@redhat.com>  [1a6cde4cf51bb6f69657f3849f2cde2431c3f134]
+
+	fix parsing of rectangle
+
+	Change-Id: I61d56fe488e265883b55346685fa4521801af40b
+
+2014-06-21  David Tardon  <dtardon@redhat.com>  [0eaba8f331a74da4d19967f4c7deac0d5511ad09]
+
+	fix parsing of RGB colors
+
+	Change-Id: I2fca1bd37343364be9ff7e44e81d9aea32156941
+
+2014-06-21  David Tardon  <dtardon@redhat.com>  [43e8f269b754c6126ac3fb7545d01f4fc79cdd53]
+
+	fix reading text blocks
+
+	Change-Id: I4e972ce871f8ee1043eaef5dbf0fc3911c2a8ccc
+
+2014-06-21  David Tardon  <dtardon@redhat.com>  [d07e07e7b4c360b182d8402ac2873e5024761e9e]
+
+	kerning is signed too
+
+	Change-Id: I6f49e06e1167c5fbaeb2081dd10c97b30f3b87e1
+
+2014-06-21  David Tardon  <dtardon@redhat.com>  [29edb992d136b27eb493f64a45b233e018eb17d3]
+
+	fix reading points
+
+	Change-Id: I545ce7c578bd13b9dfa508010a5fed874c33c4a4
+
+2014-06-21  David Tardon  <dtardon@redhat.com>  [4a5b01794f4f3b762f28739abfea73f68db2a73d]
+
+	add helpers to read signed numbers
+
+	Change-Id: I9166b82be9606b3702d96af08ed9043e975d7020
+
+2014-06-20  David Tardon  <dtardon@redhat.com>  [4b9efaf3a7ff73f5ba1f2e05f98f7bd2e2bcc236]
+
+	remove unused tryReadRecordAt function
+
+	Change-Id: Ia17c1c8d1f734dd129e1c2f922b0615d5faeee0d
+
+2014-06-20  David Tardon  <dtardon@redhat.com>  [4fc581cbf7f6f976a56481a06b434cf1efa8a80a]
+
+	linearize all reading from input
+
+	Change-Id: I444c9da41b63165f803f8277e88b96d9e6323a49
+
+2014-06-20  David Tardon  <dtardon@redhat.com>  [e1bd560dc93ae60c1c90dc8e2a6ae07e468f6e17]
+
+	use plain readU* in functions that read simple types
+
+	Change-Id: I97bc6cb2909562ed09ec73cd9a99fd5946f995a1
+
+2014-06-20  David Tardon  <dtardon@redhat.com>  [fab98e38eae4921eabed5094fb01cf0b28791935]
+
+	stop using tryReadRecordAt at places that use literal offset
+
+	Change-Id: I8353f47c9992c61c7c93ee2fb2ac81eef4781403
+
+2014-06-20  David Tardon  <dtardon@redhat.com>  [18a7f59bf1f1ec8032190733aaa4d85d92e15cef]
+
+	prepare to phase out tryReadRecordAt
+
+	Change-Id: Ie9495bed2a248e6a90dae0f4fa1302062bc382a4
+
+2014-06-20  anuragkanungo  <anuragkanungo@gmail.com>  [86d5589c1e9bff732791be9f0908c944a6cc305e]
+
+	Fonts Implementation
+
+	Change-Id: I5dc661d0ae0fa0e65c4f7d62a802661b1c8024f5
+	Reviewed-on: https://gerrit.libreoffice.org/9837
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+	Tested-by: David Tardon <dtardon@redhat.com>
+
+2014-06-20  David Tardon  <dtardon@redhat.com>  [1e04df021aca03f98618e78b755a32d195a8c0e1]
+
+	coverity#12662 improper use of negative value
+
+	Change-Id: Id1d73aa93e75a919786a810af83871e1e7a3b8a8
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [99160137fc90554f59881872bcdf1f776ad2c295]
+
+	COPYING.MPL -> COPYING
+
+	Change-Id: Ib39a99fbb2bed5e0d4b0221b735d3ac07fec3969
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [572ee20056ace746ffdf34bfc6e43f0061d3d141]
+
+	add missing source
+
+	Change-Id: I6ecb7b9d436ca49c8a5e6b3e3a881cb041ea7907
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [b383d8b54e5e0b1bda72b817cd2cf9c38aa4ca35]
+
+	sort the list of sources alphabetically
+
+	Change-Id: I036b34310d19dcf84bfe4ebf742dcc81f79c65da
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [e3eeb730f6fedceb042bae4c1022a5950e11f0dc]
+
+	pass the blame :-)
+
+	Change-Id: I1cecb9f89c2021d776e981c4f92122ec53d407d5
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [939896642811cf635f6ca18ca750350f9b44ab99]
+
+	distribute HACKING and NOTES
+
+	Change-Id: Ifa02a81cde7fd54c2a9900c4795d286015d53200
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [00ba4414d168abda1d1d8b3bf25484148320a618]
+
+	avoid copying the container all the time
+
+	Change-Id: I892cc20f252311d2105a9075c53d4fa7a2cff979
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [282a9eca252c98d11946d2ac4d6816d9fb3c6036]
+
+	pass PMDColor by const ref
+
+	Change-Id: I6e9880484b99cac06f049b8499550503cf9ab865
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [b6827cb62e1bf2a214627ba37e3b53f26659c0ba]
+
+	define version
+
+	Change-Id: I6b15f0b2d6ae9a7945d9aaab846be4ef5b1e0815
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [d2fecbc29d054784b20999212852282810cccdac]
+
+	check for all boost headers at once
+
+	Change-Id: I2b11ee4d3b898812760470e6c6267d4070674e36
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [a37f8a68ae9777b8999d82b636fe0f2a2c2c36c4]
+
+	PMDColor is not polymorphic
+
+	Change-Id: I1562fc1219fde79896ec94325b902d4c29826643
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [67031a756bbded638fe223690cb878c059a0a075]
+
+	be consistent and use include guards, not pragmas
+
+	Change-Id: I88ab93170c7f2ebb8ea8abe829db806943f61f04
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [5f12e262d556cea3d670ff2942e5b1026bd71460]
+
+	add missing license headers
+
+	Change-Id: Icbe5bf33fabd6993b9aa09bf8e31a8f475f6f01b
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [03f44165f1beeb3337249ad49222ebe8e885d6de]
+
+	pass args by const ref
+
+	Change-Id: I6e73b0ee931c7591e4c29cbc4d869cfcc0acd2c8
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [c7d256b6dbefaf669fc1880541884b8c093c54f9]
+
+	avoid out-of-bounds access
+
+	Change-Id: I2f105331b77ea4027562c2655c5b2a786c36959d
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [419f5f8f230677f5741a16e8dc39f5f9b2c2a1d6]
+
+	PMDocument::parse can never throw
+
+	Change-Id: Ic4784c90b5b3fa762ce3799962cac4ecd43259c3
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [14de2df48aa2ee2b570aad20d67eab787a8f251a]
+
+	pass string by const ref.
+
+	I actually think that the whole exception hierarchy is rather useless...
+
+	Change-Id: Iae170c49b650e7229811a07d211a6c018a568994
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [f94943422ef471f09c29c8940b0b1828c2bc6536]
+
+	pass shared_ptr by const ref
+
+	Change-Id: I239ff40fec7a194981b62306dba340891e3ae7b6
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [d33efee115ba54b17805f6c934214cb6cbb655b7]
+
+	virtual is always first by convention
+
+	Change-Id: Ie0da5e206388183afc86df6708548fdeba0f73ba
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [ffd5c9a46febb6e66b811b4b557f839c2ba7b34e]
+
+	these structs are definitely not polymorphic
+
+	Change-Id: I6e43ae2eb616755bd64a93ae0898148a2d247d3c
+
+2014-06-19  anuragkanungo  <anuragkanungo@gmail.com>  [12f02a0434b04d4be81ba2b5a0e15f047043636d]
+
+	Color Implementation of RGB and CMYK
+
+	Conflicts:
+		src/lib/constants.h
+
+	Change-Id: I83b9ebb91e239da0e4b7f7ad0837b511017a28fc
+	Reviewed-on: https://gerrit.libreoffice.org/9821
+	Tested-by: David Tardon <dtardon@redhat.com>
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+
+2014-06-19  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [c1c8186df6ae2e44bd70db423760ada97b0ce057]
+
+	Reverting a change that seems create problems
+
+	Change-Id: Icc075367827870907bbff6b99e34325755ef8079
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [5cfa354881c4620ce116a31983a2883b464b0d51]
+
+	astyle
+
+	Change-Id: Ic0bfef442d911f64e225251201b44c94c063906e
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [ca46fb9bb64542b689f74b9b15004db0fe4e479f]
+
+	fo:text-align must be used too
+
+	Change-Id: Iad974d76fd4eb3f4d57300faf9f88a85c7d0e8e3
+
+2014-06-19  David Tardon  <dtardon@redhat.com>  [974b1a9b6cc878c7bfa3589a3c21d4ab65a83574]
+
+	use static const instead of a macro
+
+	Change-Id: I7e5cfc4a6954b1244b4a379244a2dcf5cd15dee2
+
+2014-06-19  anuragkanungo  <anuragkanungo@gmail.com>  [b26a25468e09ba6e000351ba4c8b24ad99f12b23]
+
+	Text Rotation, Sub-Superscript Size and Position Output
+
+	Change-Id: I55fa04fc87b87f5cd6dd769d66aacb10724cfd93
+	Reviewed-on: https://gerrit.libreoffice.org/9814
+	Tested-by: David Tardon <dtardon@redhat.com>
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+
+2014-06-19  anuragkanungo  <anuragkanungo@gmail.com>  [db2bfe8262cc834fbd69c69ec9c5090ceb0fcb90]
+
+	Bug Fixing
+
+	Change-Id: Iff85494c2e63ccfe19806dee914c25ead9763556
+	Reviewed-on: https://gerrit.libreoffice.org/9811
+	Reviewed-by: Muthu Subramanian K <muthusuba@gmail.com>
+	Tested-by: David Tardon <dtardon@redhat.com>
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+
+2014-06-19  anuragkanungo  <anuragkanungo@gmail.com>  [532c09bc2f8d969701d50f1db5caf8fca5136d6e]
+
+	Paragraph Indentation and Code Cleaning
+
+	Change-Id: I6d24e1dbae51ab4779e2afba84170153ade1a48f
+	Reviewed-on: https://gerrit.libreoffice.org/9810
+	Tested-by: David Tardon <dtardon@redhat.com>
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+
+2014-06-19  anuragkanungo  <anuragkanungo@gmail.com>  [e32964afb3b8031e1b785279bd45f50e967a112b]
+
+	Text Box Implementation -- Part 1
+
+	Change-Id: I480106e490d2f95bd8acc4704894f0f2dda3a9da
+	Reviewed-on: https://gerrit.libreoffice.org/9789
+	Tested-by: David Tardon <dtardon@redhat.com>
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+
+2014-06-19  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [efdba3f866957bb7674ae4556c71b21184cde4e1]
+
+	Don't use wrappers if the original interface has all we need
+
+	Change-Id: Ie2185fca6253f27f11043162032d19b3517adcd5
+
+2014-06-19  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [46a0ba2dac174add68fa81e2172063e6a7a3d72e]
+
+	i != length condition is always true
+
+	Change-Id: I625d59417af46673d7050dbf21e6ba40f667fee0
+
+2014-06-19  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [9b2654e61aba866cb3d4063ae00f402f25e21f87]
+
+	It seems that on little endian file, this record id is still in big endian
+
+	Change-Id: Iefceb590c48302cf42143ca3353193d2e27114b6
+
+2014-06-12  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [b466b6248525b5b4a989ccb0d57df0c7b6428a0f]
+
+	Remove some unused code
+
+	Still remaining according to callcatcher:
+		libpagemaker::getBoundingBox(libpagemaker::PMDLineSet const&,
+			libpagemaker::TransformationMatrix const&)
+		libpagemaker::getLength(librevenge::RVNGInputStream* const&)
+		libpagemaker::readNBytes(librevenge::RVNGInputStream* const&,
+			unsigned long)
+		libpagemaker::readU64(librevenge::RVNGInputStream* const&, bool)
+		libpagemaker::skip(librevenge::RVNGInputStream* const&,
+			unsigned long)
+
+	Change-Id: Id9dd42f744186986708abc0083c8e3e7fd0d8f0f
+
+2014-06-12  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [f058bbd2b41a4781c4abd90ef86cb6e6cd9797fd]
+
+	Remove all the yaml stuff and the use of pragma once
+
+	With the yaml stuff we would never enter the LibreOffice
+	repository, since adding a dependency for a debug feature
+	is not really what we want. Pmd2raw and cppunit unit tests can
+	cater for this just fine.
+
+	As to the pragma once, we prefer to do it with defines. Also add
+	proper license header into all our files.
+
+	Change-Id: If11aec8a55a8d8dd7967d8a0ad228a73fcb0831f
+
+2014-06-07  anuragkanungo  <anuragkanungo@gmail.com>  [233d28a889872a9970fb372a19ccc8b26142cbcb]
+
+	Line & Ellipse Fill,Stroke Implementation
+
+	Change-Id: I94da5849addf5ab4a48fa4afb5e447467f826dfa
+	Reviewed-on: https://gerrit.libreoffice.org/9672
+	Reviewed-by: Brennan Vincent <brennan.vincent@gmail.com>
+	Tested-by: Brennan Vincent <brennan.vincent@gmail.com>
+
+2014-06-07  anuragkanungo  <anuragkanungo@gmail.com>  [4d3ad6a4f6511f90cd2115e1f47aa99b56131727]
+
+	Stroke Parsing and Solid Output for Rectangle and Polygon
+
+	Change-Id: I61bb8e8e19519e545e38570282e0db4bc462000a
+	Reviewed-on: https://gerrit.libreoffice.org/9669
+	Tested-by: Brennan Vincent <brennan.vincent@gmail.com>
+	Reviewed-by: Brennan Vincent <brennan.vincent@gmail.com>
+
+2014-06-05  anuragkanungo  <anuragkanungo@gmail.com>  [7cd9243c74888b9347bb38c87c8c90eaa21316ab]
+
+	Fill Output for Rectangle, Closed Polygon
+
+	Change-Id: I95d7f6c903d83870acea491e76ace62b237312c0
+
+2014-06-04  anuragkanungo  <anuragkanungo@gmail.com>  [dc68900c11897fc30ca015d99de0fb5ee1481b02]
+
+	Fill Attributes Parsing
+
+	Change-Id: I4bea552ab25dd329d56138e37aea362adc3299be
+	Reviewed-on: https://gerrit.libreoffice.org/9619
+	Tested-by: David Tardon <dtardon@redhat.com>
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+
+2014-06-04  anuragkanungo  <anuragkanungo@gmail.com>  [bb866782d0e265bcdc770a1ff1d3b1eb938c78f7]
+
+	Ellipse Skew Parsing
+
+	Change-Id: I2346af1505e149c6425e186c0bf4a9f7217c2f2b
+	Reviewed-on: https://gerrit.libreoffice.org/9617
+	Tested-by: David Tardon <dtardon@redhat.com>
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+
+2014-06-04  anuragkanungo  <anuragkanungo@gmail.com>  [70ddd8bb25963eb3e20cbd2a249bc939987573a5]
+
+	Ellipse Skew Parsing, Imperfect Output
+
+	Change-Id: I1891895c626a0aad2c6b5c595dc2461cb3c92aeb
+	Reviewed-on: https://gerrit.libreoffice.org/9496
+	Tested-by: David Tardon <dtardon@redhat.com>
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+
+2014-05-26  anuragkanungo  <anuragkanungo@gmail.com>  [f85375f3d254cc667c1c623fc019e2a9a2440025]
+
+	Polygon Skew Implemented
+
+	Change-Id: I4a449a61d67ca50caeb8ab07906da423baeb2358
+	Reviewed-on: https://gerrit.libreoffice.org/9489
+	Tested-by: David Tardon <dtardon@redhat.com>
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+
+2014-05-26  anuragkanungo  <anuragkanungo@gmail.com>  [0521eb066c0e673a05b1fcb2f788b3a0db158f50]
+
+	Rectangle Skew Rotation Implemented, Polygon's in Progress
+
+	Change-Id: I36352d61dc1db127e007056cfc3df2719305e27b
+	Reviewed-on: https://gerrit.libreoffice.org/9485
+	Tested-by: David Tardon <dtardon@redhat.com>
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+
+2014-05-26  anuragkanungo  <anuragkanungo@gmail.com>  [c14853f5dbadb81d4848770704407aa5cf4bf15e]
+
+	Code Cleaning
+
+	Change-Id: Ib397c8c038f90464a4b4eaad5970a4a2fce7ec58
+	Reviewed-on: https://gerrit.libreoffice.org/9463
+	Tested-by: David Tardon <dtardon@redhat.com>
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+
+2014-05-25  David Tardon  <dtardon@redhat.com>  [395f98394a23d30363039a187dc4ae451724b690]
+
+	export API symbols, part 2
+
+
+2014-05-25  David Tardon  <dtardon@redhat.com>  [80cd866d0aa55352d419ac0daf88796064a7c87b]
+
+	export API symbols
+
+
+2014-05-25  David Tardon  <dtardon@redhat.com>  [e31f92ef5b1f68b2f3cd6a787e61155c802df705]
+
+	add requires for other used projects
+
+
+2014-05-25  David Tardon  <dtardon@redhat.com>  [bf1fbc45e3613e4416d4c7d99df5b4be1e848350]
+
+	require librevenge-stream too
+
+
+2014-05-24  anuragkanungo  <anuragkanungo@gmail.com>  [6de38a4d705871ad0c47c30dfa28613a0636136f]
+
+	Polygon Rotation Done
+
+	Change-Id: I6ce2414e1d631690e81e7fa70d72c4752c196b70
+	Reviewed-on: https://gerrit.libreoffice.org/9461
+	Reviewed-by: Fridrich Strba <fridrich@documentfoundation.org>
+	Tested-by: Fridrich Strba <fridrich@documentfoundation.org>
+
+2014-05-22  anuragkanungo  <anuragkanungo@gmail.com>  [a93cf403dc0c5638ee705969d0df17315a3b4a18]
+
+	Regular Polygon Rotation
+
+	Change-Id: I415059875301e1577600ac83d66a68825c3f9647
+	Reviewed-on: https://gerrit.libreoffice.org/9438
+	Reviewed-by: Fridrich Strba <fridrich@documentfoundation.org>
+	Tested-by: Fridrich Strba <fridrich@documentfoundation.org>
+
+2014-05-22  anuragkanungo  <anuragkanungo@gmail.com>  [4c7795c1a25d319c653a767b004a214e643a1945]
+
+	Line Implemented, Regular Polygon Rotated
+
+	Change-Id: I4203b8442cc5b11917b39d55140d1c1852409911
+	Reviewed-on: https://gerrit.libreoffice.org/9434
+	Reviewed-by: Fridrich Strba <fridrich@documentfoundation.org>
+	Tested-by: Fridrich Strba <fridrich@documentfoundation.org>
+
+2014-05-18  anuragkanungo  <anuragkanungo@gmail.com>  [94dfd99be4d1be590c0c3556244845662eebf210]
+
+	Ellipse Rotation Successful
+
+	Change-Id: I4902d0a874e097a55b5bc344208c64e21f66e756
+	Reviewed-on: https://gerrit.libreoffice.org/9395
+	Reviewed-by: Fridrich Strba <fridrich@documentfoundation.org>
+	Tested-by: Fridrich Strba <fridrich@documentfoundation.org>
+
+2014-05-18  anuragkanungo  <anuragkanungo@gmail.com>  [e8f2a3b26f2115de09008bb04a2decc35d028fb6]
+
+	Ellipse Rotation Parsing
+
+	Change-Id: Ib08635a90bd6dc7dc85c0e22e8f0bcce9af91a6f
+	Reviewed-on: https://gerrit.libreoffice.org/9394
+	Reviewed-by: Fridrich Strba <fridrich@documentfoundation.org>
+	Tested-by: Fridrich Strba <fridrich@documentfoundation.org>
+
+2014-05-18  anuragkanungo  <anuragkanungo@gmail.com>  [288b71014027f9e98f9589873993dfa9a9934c1c]
+
+	Ellipse Rotation Parsing
+
+	Change-Id: I303580bbce1127f309135f86562f478242b3e4c6
+	Reviewed-on: https://gerrit.libreoffice.org/9393
+	Reviewed-by: Fridrich Strba <fridrich@documentfoundation.org>
+	Tested-by: Fridrich Strba <fridrich@documentfoundation.org>
+
+2014-05-16  anuragkanungo  <anuragkanungo@gmail.com>  [e23dce9c6f627f548f266872699d33b70a1cb3a5]
+
+	Rough Implementation of Ellipse using drawPath
+
+	Change-Id: Id06e1b57fe0b8fb5c58ee494174e2a0aa9214280
+	Reviewed-on: https://gerrit.libreoffice.org/9370
+	Reviewed-by: Fridrich Strba <fridrich@documentfoundation.org>
+	Tested-by: Fridrich Strba <fridrich@documentfoundation.org>
+
+2014-05-16  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [98f9061baf6c60eed4e1d2cce831efef87af0f2f]
+
+	Use C++ limits
+
+	Change-Id: I0845eadd7cb09c6ce79cc1909ca231f3b01d8e77
+
+2014-05-16  anuragkanungo  <anuragkanungo@gmail.com>  [3e91f0dfbc307bdaa081e226f153817a0dca791d]
+
+	Ellipse Implementation Using drawEllipse
+
+	Change-Id: I1c8a86cb71cb7fc9815b282b0346cd87b8ea8849
+	Reviewed-on: https://gerrit.libreoffice.org/9369
+	Reviewed-by: Fridrich Strba <fridrich@documentfoundation.org>
+	Tested-by: Fridrich Strba <fridrich@documentfoundation.org>
+
+2014-05-14  anuragkanungo  <anuragkanungo@gmail.com>  [593a93770c1f298550fe6a5b526b6d265b5e83ff]
+
+	Rectangle Rotation successful for all angles
+
+	Change-Id: I1c3c608de5a0fc2b04c63df2a792698eb7dd8e6e
+	Reviewed-on: https://gerrit.libreoffice.org/9352
+	Tested-by: David Tardon <dtardon@redhat.com>
+	Reviewed-by: David Tardon <dtardon@redhat.com>
+
+2014-05-13  anuragkanungo  <anuragkanungo@gmail.com>  [5fc1751e915ee29b76d5ee240105946e28d890dd]
+
+	Implementation of Rectangle Rotation
+
+	Change-Id: I322e28fb48e64714bc9a708af9b6b357425e9fa2
+	Reviewed-on: https://gerrit.libreoffice.org/9338
+	Reviewed-by: Fridrich Strba <fridrich@documentfoundation.org>
+	Tested-by: Fridrich Strba <fridrich@documentfoundation.org>
+
+2014-05-13  anuragkanungo  <anuragkanungo@gmail.com>  [f41dcafcd8c6c7c3edb98908fe16462b27a419f8]
+
+	Rotation Implementation
+
+	Change-Id: Ie38be39d34743084325628dbbf243536b79042e2
+	Reviewed-on: https://gerrit.libreoffice.org/9299
+	Reviewed-by: Fridrich Strba <fridrich@documentfoundation.org>
+	Tested-by: Fridrich Strba <fridrich@documentfoundation.org>
+
+2014-05-10  Brennan Vincent  <brennan@umanwizard.com>  [09e0c484b17edc4d0c1c580fee0cb28069a8005e]
+
+	Add tags file to gitignore
+
+	Change-Id: I8aa6c382ffc12c7628aa4c6b51a258add4160710
+
+2014-05-09  Brennan Vincent  <brennan@umanwizard.com>  [8feb276e5f98f41ab4a29ed7d7148775f8534149]
+
+	Use standard UINT32_MAX rather than defining it ourselves.
+
+	Change-Id: Ie89c3d12963c08035f7378b6fb317db117624d06
+
+2014-05-06  anuragkanungo  <anuragkanungo@gmail.com>  [c55356fc4ceea20dbae9f13be58cdb7816e8427f]
+
+	Rectangle Rotation Parsing
+
+	Change-Id: I1c3afc33ff7d548205da5d625e19a3b49ef143e5
+	Reviewed-on: https://gerrit.libreoffice.org/9256
+	Reviewed-by: Fridrich Strba <fridrich@documentfoundation.org>
+	Tested-by: Fridrich Strba <fridrich@documentfoundation.org>
+
+2014-04-01  Brennan Vincent  <brennan@umanwizard.com>  [63c83d8c845980e14099753c6354ccc1ddbff4dd]
+
+	Correct library name in pkgconfig file
+
+
+2014-03-30  Brennan Vincent  <brennan@umanwizard.com>  [d150a89b3cd0cb63a4c472c28c9a5df9897179c9]
+
+	Remove useless debugging print statement
+
+
+2014-03-26  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [b6ad0a89c4a90f59a26514e5bd6cf82336f54970]
+
+	Remove some useless options and allow building without tools (for LO build)
+
+	Change-Id: I0a485b84131f829397d3f756e5c485b61287dff1
+
+2014-03-26  David Tardon  <dtardon@redhat.com>  [b4f8d69fe168fbbed25f0e8c0958b1a529dec886]
+
+	add git-review setup
+
+	Change-Id: Ifcf4a5e6868d9572397bbf7b6a16899e200cd617
+
+2014-03-26  David Tardon  <dtardon@redhat.com>  [2ee4fea03df1bbe7ac2b8beb99e8c4130d1f0736]
+
+	set git hooks automatically
+
+
+2014-03-26  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [6295275072c540fcb42e137b8bf26b6484df877c]
+
+	Distcheck fixes
+
+
+2014-03-25  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [569793227202e1c0dbb8e6784140d2b2d0c2db75]
+
+	Remove warnings
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [8c51aece567c89d6cb18209acfbac4b2adaa5d8f]
+
+	Remove C++isms
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [c8c2b3c45ddbe3d33276fdf108c4dd2934529f72]
+
+	astyle --options=astyle.options \*.cpp \*.h
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [c995ce8f797c3a32951e0bc72b3a48095ee0aba8]
+
+	change raw to yaml in a file that was copied over erroneously
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [cfc15f9c21eebff9488230d80a3156b3765161c3]
+
+	remove pmd2yaml file that was erroneously added to source control
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [8b32a6a6ac21d9633bddff73b79ddd0fcdcac362]
+
+	Change pre-yaml message to "YAML follows".
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [2ca1bd823f910e8e18188e78637011622b93e669]
+
+	Remove debug messages
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [edc36ed0bc3082f71ae67b7ab4d8be0ccacb7c4c]
+
+	create pmd2yaml
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [37ffe379713c08899981532bad1a9df96c7fd3e2]
+
+	Fix bug in shape yaml emit
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [dc948e86e44340c418c93d017bff0c5bd4cde97c]
+
+	Use boost::scoped_ptr in parseToYaml too
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [b60827ad607609a8b6217ca0d0aca0797f0baea8]
+
+	fix a few bugs; i think this is finally in some kind of shape
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [5df0a17263f908e1f4ff5c784108bb20be208435]
+
+	logging stuff
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [643abc7b31a0719ae59be1ca6b73da79fa09f768]
+
+	Fix several issues
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [6fbbf55cd4202bb3cca0319465ffa6548e549674]
+
+	astyle --options=astyle.options \*.cpp \*.h
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [abca700237aa618f47998e665629e5b7f22c2b03]
+
+	compilable yaml thing
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [f7ffc64e1fc205642c98bb06448aafdf9bb5b7df]
+
+	yaml stuff first pass
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [d5ac6787b6ffad41d366b8ee0886f4dce681e579]
+
+	Take ownership of the RVNGInputStream so it's not leaked.
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [7082838885607eb98fc1c69b19352efafcca541f]
+
+	a few fixes
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [4d66dfa3e3ecfc1749cb5e127990721979178588]
+
+	untested but hey it builds :)
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [3fa0e38ba5cdb50719f65095833b1828e54a9c7f]
+
+	add some stuff
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [094fed17d6be1b1211a88b4647da0f478e2bff05]
+
+	Shapes (WIP)
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [c7b31b23240fddd93673a62c06ae984a180b1408]
+
+	PMDRecord -> PMDRecordContainer
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [2215bf207abcba540837234ba92b3b3fdde9a86c]
+
+	add semicolon
+
+
+2014-03-25  Brennan Vincent  <brennan@umanwizard.com>  [a8a0d127f31f6eec0c76f3ea9a7d5cb50f081a80]
+
+	Add PMDRectangle
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [1c46eee62dd615a451c43c6a4713801751a242d8]
+
+	astyle --options=astyle.options \*.cpp \*.h
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [5fbf920b46343b4ebb247725db35325556eb0f23]
+
+	change raw to yaml in a file that was copied over erroneously
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [656fd9723be5b9d2e03b5c47f3d8a406e05ae176]
+
+	remove pmd2yaml file that was erroneously added to source control
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [48b85ebd236c20e7b35c51d0d86823c85a391f3c]
+
+	Add basic_shapes test
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [55258e62d430cf370ebefceee1df4d395c075da8]
+
+	Runner for parsing tests
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [5817742c5232e6c9a6668561838b4d1e1b77cf61]
+
+	Change pre-yaml message to "YAML follows".
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [90d325e38cb9a383559dfc01821fd1ab43d48cc4]
+
+	Remove debug messages
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [48ea3c2bc70ee8c8a70dd269c0fc02e8f69417ea]
+
+	create pmd2yaml
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [be3d7ac0ccd1363ed9a38b275d07270b224fd893]
+
+	Fix bug in shape yaml emit
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [710a5e3a78e1e6f166181e793a941768c19650de]
+
+	Use boost::scoped_ptr in parseToYaml too
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [f7d13c93c58e7d471c8a5910d7dfc0795ae4b666]
+
+	fix a few bugs; i think this is finally in some kind of shape
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [7a43d58d8df360cdd3ec868f123907b6fde26eeb]
+
+	logging stuff
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [25399615433672fc531bcb86b557de58f713d057]
+
+	Fix several issues
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [7cddba7c4b9005d52ef0bda78a2202bc190478c3]
+
+	astyle --options=astyle.options \*.cpp \*.h
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [b9ba943a3986806dcaef0b368a54fe5923090139]
+
+	compilable yaml thing
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [388313586ac5c9ea70e7dd6d45c6860a2bac383e]
+
+	yaml stuff first pass
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [625e93c92f0d89eeaccad630f09b359899300cf8]
+
+	Take ownership of the RVNGInputStream so it's not leaked.
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [94dc429cf61efd5ea52b302ff11b7b717f42dbf4]
+
+	a few fixes
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [a36b8c48952b6decc72c4f9f27128953cfaf9c62]
+
+	untested but hey it builds :)
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [e9f8ddcc4e268ceaf0e1cfa3d4ed3c1555e2061e]
+
+	add some stuff
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [fe762443eb602944a91c4f48e46f32eb25b317bc]
+
+	Shapes (WIP)
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [8dafca5998821f11030fa198f155d39802b6963c]
+
+	PMDRecord -> PMDRecordContainer
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [51607f6abb0f6181fd80016b4f23b4a92e1698f3]
+
+	add semicolon
+
+
+2014-03-12  Brennan Vincent  <brennan@umanwizard.com>  [e84141c0aabf2d66d6c8ddbeaebb28bb2318cefa]
+
+	Add PMDRectangle
+
+
+2014-03-10  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [4fe4f318a701b418fcf8e5a79c70e67c1f1d748e]
+
+	Kill warning in a non-debug mode
+
+
+2014-03-10  Brennan Vincent  <brennan@umanwizard.com>  [07d91b2daceab6f1a5cfe85b40b9171ebd792b73]
+
+	astyle --options=astyle.options \*.cpp \*.h
+
+
+2014-03-10  Brennan Vincent  <brennan@umanwizard.com>  [a3bccd48f1fb7f8bada2cb2f91560aea0575fe3c]
+
+	Take ownership of the RVNGInputStream so it's not leaked.
+
+
+2014-03-10  Brennan Vincent  <brennan@umanwizard.com>  [41608f814696a455d5017b69415156273d78d9ba]
+
+	Add vim swap files to gitignore
+
+
+2014-03-10  Brennan Vincent  <brennan@umanwizard.com>  [06a4cfe1e37c4d3ced11c81ad01bfc3b7cfc6625]
+
+	Add compile file to .gitignore
+
+
+2014-03-10  Brennan Vincent  <brennan@umanwizard.com>  [fef4a5d3c90186ac1d35158135b88f7b1347db7a]
+
+	a few fixes
+
+
+2014-03-10  Brennan Vincent  <brennan@umanwizard.com>  [8d66dec104bac0d9da913c2a300a159de690b06f]
+
+	untested but hey it builds :)
+
+
+2014-03-10  Brennan Vincent  <brennan@umanwizard.com>  [909d18a7966796fff6c26d101f1a83a20a6a5a5e]
+
+	add some stuff
+
+
+2014-03-10  Brennan Vincent  <brennan@umanwizard.com>  [b1133f40ae9a4afd3b5855b746dde7e6d708e2f0]
+
+	Shapes (WIP)
+
+
+2014-03-10  Brennan Vincent  <brennan@umanwizard.com>  [a81fb09c621dbcf3d1aedc2bc11dbf9148e2fb9b]
+
+	PMDRecord -> PMDRecordContainer
+
+
+2014-03-10  Brennan Vincent  <brennan@umanwizard.com>  [9aec0bb33656126b941d41d6f874e92a3696cdfb]
+
+	add semicolon
+
+
+2014-03-10  Brennan Vincent  <brennan@umanwizard.com>  [c88d5304b9e0b488c6a2e6a1ccacbde184480c6e]
+
+	Add PMDRectangle
+
+
+2014-02-27  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [06b32782d3eb4b462835b1a5c432f908aa6c1cbf]
+
+	Astyle action
+
+
+2014-02-01  Brennan Vincent  <brennan@umanwizard.com>  [620f85349a224defdffeb0f39ba563d22d0faa78]
+
+	Add some geometry primitives
+
+
+2014-01-22  Brennan Vincent  <brennan@umanwizard.com>  [e5cb3716d0a154b4dbf820ddb16f78ad2930c74a]
+
+	Correction for notes
+
+
+2014-01-21  Brennan Vincent  <brennan@umanwizard.com>  [c7d2db570d0f1eede8587e2fea2a57028398d6b3]
+
+	Update notes.
+
+
+2014-01-21  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [6e62ebd7b64bf6a0a393997aa905da045b62fb8e]
+
+	astyle --options=astyle.options \*.cpp \*.h
+
+
+2014-01-20  Brennan Vincent  <brennan@umanwizard.com>  [5605afa6642b00c1fbbd8866198e6699bbcac8cc]
+
+	Check for correct boost headers
+
+
+2014-01-20  Brennan Vincent  <brennan@umanwizard.com>  [f6f1d305939f70969ddb93f45631898ee38b32d3]
+
+	Actually paint something (blank pages for now)
+
+
+2014-01-20  Brennan Vincent  <brennan@umanwizard.com>  [ef980a901fa638ae00c62239966e7dcc48df999d]
+
+	A few minor fixes. Blank pages can now be output.
+
+
+2014-01-20  Brennan Vincent  <brennan@umanwizard.com>  [0e3d52856643ecc09b44a6b83e40e0bd8160cbcc]
+
+	Add JSON output for debugging
+
+
+2014-01-20  Brennan Vincent  <brennan@umanwizard.com>  [bf80a8f047241f1bd0659b3f70a7e54084fe3ce9]
+
+	Add a few debugging messages.
+
+
+2014-01-19  Brennan Vincent  <brennan@umanwizard.com>  [9aedd88b5916e24dc6fbc5b853fde692696b5090]
+
+	[untested] first pass at parsing (not outputting) height/width and number of pages
+
+
+2014-01-18  Brennan Vincent  <brennan@umanwizard.com>  [809c7e0e696e26c80a6724dcdcc1504b68308756]
+
+	add notes on global attributes common to the Pagemaker format.
+
+
+2013-12-02  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [d43237e07b11014713dc34dc4de186d798fe7033]
+
+	Some simplification from the POV of license
+
+
+2013-12-02  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [6cc608855e494ab0ed8816ec92cf62aed160443c]
+
+	Don't ignore files that are not gonna be there
+
+
+2013-12-02  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [219a0107ad93d1ee4e7b2fe71c558763cb3b83c1]
+
+	Skeleton of libpagemaker with empty code
+
+
+2013-12-02  Fridrich Štrba  <fridrich.strba@bluewin.ch>  [0cb96c609330a55b4fdf655ba295f9bbc26cb59b]
+
+	initial commit of libpagemaker
+

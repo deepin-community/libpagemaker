@@ -1,0 +1,37 @@
+Source: libpagemaker
+Priority: optional
+Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Uploaders: Rene Engelhard <rene@debian.org>
+Build-Depends: autotools-dev,
+               dh-autoreconf,
+               debhelper (>= 10),
+               doxygen,
+               libboost-dev,
+               librevenge-dev,
+               pkg-config
+Standards-Version: 3.9.4
+Section: libs
+Homepage: http://wiki.documentfoundation.org/DLP/Libraries/libpagemaker
+
+Package: libpagemaker-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libpagemaker-0.0-0 (= ${binary:Version}),
+         librevenge-dev,
+         ${misc:Depends}
+Description: Library for importing and converting PageMaker Documents -- development
+ libpagemaker is library providing ability to interpret and import
+ Adobe PageMaker documents into various applications.
+ .
+ This package contains the development files (headers, ...)
+
+Package: libpagemaker-0.0-0
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Library for importing and converting PageMaker Documents
+ libpagemaker is library providing ability to interpret and import
+ Adobe PageMaker documents into various applications.
+

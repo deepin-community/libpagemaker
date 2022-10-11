@@ -1,0 +1,51 @@
+libpagemaker (0.0.4-1) unstable; urgency=medium
+
+  * New upstream version 0.0.4
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 10 Jan 2018 06:52:13 +0000
+
+libpagemaker (0.0.3-2) unstable; urgency=medium
+
+  * [2775547] move Maintainer: to Debian LibreOffice Maintainers
+  * [e11ff21] multiarchify
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 12 Sep 2016 22:38:21 +0200
+
+libpagemaker (0.0.3-1) unstable; urgency=medium
+
+  * New upstream release
+
+  * use --parallel (see #798605)
+  * fix copyright; add missing empty line so that Files: * is seen
+
+ -- Rene Engelhard <rene@debian.org>  Wed, 16 Mar 2016 17:59:54 +0100
+
+libpagemaker (0.0.2-2) unstable; urgency=medium
+
+  * upload to unstable
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 05 Apr 2015 19:49:20 +0200
+
+libpagemaker (0.0.2-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 27 Nov 2014 22:08:56 +0100
+
+libpagemaker (0.0.1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 21 Aug 2014 20:41:03 +0200
+
+libpagemaker (0.0.0-2) unstable; urgency=low
+
+  * upload to unstable 
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 31 Jul 2014 21:04:31 +0200
+
+libpagemaker (0.0.0-1) experimental; urgency=low
+
+  * Initial release 
+
+ -- Rene Engelhard <rene@debian.org>  Fri, 18 Jul 2014 19:06:12 +0200
